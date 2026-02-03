@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		14D519542F32355C007538E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D519502F32355C007538E1 /* Assets.xcassets */; };
+		14D519552F32355C007538E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D519512F32355C007538E1 /* ContentView.swift */; };
+		14D519562F32355C007538E1 /* TickTackBoomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D519522F32355C007538E1 /* TickTackBoomApp.swift */; };
+		14D519592F323595007538E1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D519582F323595007538E1 /* Color.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		14D519342F322F42007538E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +34,13 @@
 		14D519262F322F41007538E1 /* TickTackBoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickTackBoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D519332F322F42007538E1 /* TickTackBoomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickTackBoomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D5193D2F322F42007538E1 /* TickTackBoomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickTackBoomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14D519502F32355C007538E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14D519512F32355C007538E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		14D519522F32355C007538E1 /* TickTackBoomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickTackBoomApp.swift; sourceTree = "<group>"; };
+		14D519582F323595007538E1 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		14D519282F322F41007538E1 /* TickTackBoom */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TickTackBoom;
-			sourceTree = "<group>";
-		};
 		14D519362F322F42007538E1 /* TickTackBoomTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TickTackBoomTests;
@@ -75,7 +81,7 @@
 		14D5191D2F322F41007538E1 = {
 			isa = PBXGroup;
 			children = (
-				14D519282F322F41007538E1 /* TickTackBoom */,
+				14D519532F32355C007538E1 /* TickTackBoom */,
 				14D519362F322F42007538E1 /* TickTackBoomTests */,
 				14D519402F322F42007538E1 /* TickTackBoomUITests */,
 				14D519272F322F41007538E1 /* Products */,
@@ -92,6 +98,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		14D519532F32355C007538E1 /* TickTackBoom */ = {
+			isa = PBXGroup;
+			children = (
+				14D519572F323562007538E1 /* Extensions */,
+				14D519502F32355C007538E1 /* Assets.xcassets */,
+				14D519512F32355C007538E1 /* ContentView.swift */,
+				14D519522F32355C007538E1 /* TickTackBoomApp.swift */,
+			);
+			path = TickTackBoom;
+			sourceTree = "<group>";
+		};
+		14D519572F323562007538E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				14D519582F323595007538E1 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +131,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				14D519282F322F41007538E1 /* TickTackBoom */,
 			);
 			name = TickTackBoom;
 			packageProductDependencies = (
@@ -212,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14D519542F32355C007538E1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14D519552F32355C007538E1 /* ContentView.swift in Sources */,
+				14D519562F32355C007538E1 /* TickTackBoomApp.swift in Sources */,
+				14D519592F323595007538E1 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
