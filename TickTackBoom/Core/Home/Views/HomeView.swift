@@ -25,23 +25,15 @@ struct HomeView: View {
 
 extension HomeView {
     private var pageContent: some View {
-        VStack {
+        VStack(spacing: 20) {
            Image("AppLogo")
                 .resizable()
                 .scaledToFit()
+                .frame(maxWidth: .infinity)
+                .frame(height: 300)
             Spacer()
-            
-            Button {
-                
-            } label: {
-                Text("Играть")
-            }
-            
-            Button {
-                
-            } label: {
-                Text("Что за игра?")
-            }
+            CustomButton(title: "Играть", width: 340, action: {})
+            CustomButton(title: "Что за игра?", width: 280, action: {})
             
             Spacer()
         }
