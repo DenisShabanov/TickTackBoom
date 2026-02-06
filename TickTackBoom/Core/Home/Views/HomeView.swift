@@ -14,10 +14,9 @@ struct HomeView: View {
     var body: some View {
         ZStack{
             LinearGradient(colors: [Color.theme.secondGradient, Color.theme.firstGradient], startPoint: .topLeading, endPoint: .bottomTrailing)
-            
+                .ignoresSafeArea()
             pageContent
         }
-        .ignoresSafeArea()
     }
 }
 

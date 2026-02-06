@@ -12,6 +12,8 @@
 		14D519592F323595007538E1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D519582F323595007538E1 /* Color.swift */; };
 		14D5195F2F3238ED007538E1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5195E2F3238ED007538E1 /* HomeView.swift */; };
 		14D5196E2F34C87D007538E1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5196D2F34C87D007538E1 /* CustomButton.swift */; };
+		14D5197E2F34D354007538E1 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5197D2F34D354007538E1 /* GameView.swift */; };
+		14D519812F34FA5D007538E1 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 14D519802F34FA5D007538E1 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 		14D519582F323595007538E1 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		14D5195E2F3238ED007538E1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		14D5196D2F34C87D007538E1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		14D5197D2F34D354007538E1 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -60,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14D519812F34FA5D007538E1 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +128,7 @@
 			children = (
 				14D5196C2F34C85E007538E1 /* Components */,
 				14D5195B2F3237CD007538E1 /* Home */,
+				14D5197B2F34D318007538E1 /* Game */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -152,6 +157,22 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		14D5197B2F34D318007538E1 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				14D5197C2F34D342007538E1 /* Views */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		14D5197C2F34D342007538E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14D5197D2F34D354007538E1 /* GameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +190,7 @@
 			);
 			name = TickTackBoom;
 			packageProductDependencies = (
+				14D519802F34FA5D007538E1 /* SDWebImageSwiftUI */,
 			);
 			productName = TickTackBoom;
 			productReference = 14D519262F322F41007538E1 /* TickTackBoom.app */;
@@ -252,6 +274,9 @@
 			);
 			mainGroup = 14D5191D2F322F41007538E1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				14D5197F2F34FA5D007538E1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 14D519272F322F41007538E1 /* Products */;
 			projectDirPath = "";
@@ -298,6 +323,7 @@
 				14D5195F2F3238ED007538E1 /* HomeView.swift in Sources */,
 				14D519562F32355C007538E1 /* TickTackBoomApp.swift in Sources */,
 				14D519592F323595007538E1 /* Color.swift in Sources */,
+				14D5197E2F34D354007538E1 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,6 +658,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		14D5197F2F34FA5D007538E1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14D519802F34FA5D007538E1 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14D5197F2F34FA5D007538E1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 14D5191E2F322F41007538E1 /* Project object */;
 }
